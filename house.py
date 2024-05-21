@@ -9,7 +9,7 @@ class House(Base):
     name = Column(String(20), nullable=False)
     city = Column(String(20), nullable=False)
     meterage = Column(Integer)
-    address = Column(String())
+    #address = Column(String())
     finalladress=Column(String)
     plate=Column(String(5))
     numberofrooms = Column(Integer, default=0)
@@ -19,6 +19,7 @@ class House(Base):
     price=Column(String)
     house_id = Column(Integer, ForeignKey("person.id"))
     house = relationship(Person)
+
 
 
     def __init__(self, id, name, city ,meterage ,address,finalladress, plate, numberofrooms,elevator,parking,warehouse,price):

@@ -13,12 +13,12 @@ class Rent(Base):
     price=Column(String)
     #datetime=
 
-    def __init__(self, id, house, city, customer, price, datetome):
+    def __init__(self, id, house, city, customer, price, datetime):
         self.id = id
         self.house = house
         self.city = city
         self.customer = customer
         self.price = price
-        self.datetome = datetome
+        self.datetime = datetime
 
 
